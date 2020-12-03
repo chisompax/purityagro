@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300&display=swap');
+
+@import "./variables";
+@import "./scss/bootstrap.scss";
+
+body{
+    background-color: white ;
+    font-family: 'Poppins';
+
+}
+
+
+
+.flex-1{
+    flex-grow: 1;
+}
+.btn{
+    border-radius: 0;
+}
+
+p{
+    
+    font-weight: 300;
+    font-size: 18px;
+ }
+
+
+
+
+header{
+    .active{
+        // color: green;
+         border-bottom: 4px solid green;
+     }
+
+    .navbar{ 
+        background-color: #fff;
+        font-size: 1.125rem;
+        position: relative;
+        
+        @media screen and (max-width:768px) {
+            .nav {
+                position: absolute;
+                top: 70%;
+                flex-direction: column;
+            align-content: flex-end;
+            background-color: #fff;
+            width: 100vw;
+            right: 0;
+            padding-right: 1rem;
+            }
+        }
+    }
+    .bar {
+        height: 2px;
+      background-color: black;
+
+    }
+    .bar-middle {
+        margin: 0.5rem 0;
+    }
+    
+}
+
+.banner{
+    background-image: url("/assets2/sprayman.png");
+    height: 100vmin;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .pop{
+        
+        height:80vmin ;
+        display: flex;
+        justify-content: left;
+        align-items: flex-end;
+        .oppo{
+            width: 581px;
+        }
+    }
+
+    h1{
+        font-size: 72px;
+        font-weight: 700;
+        margin-bottom: 7px;
+
+    }
+}
+
+.line-p{
+    display: flex;
+    // justify-content: space-between;
+    hr{
+        height: 3px;
+        flex: 1;
+        background-color: $success;
+    }
+}
+
+
+.sit{
+//    background-color: red;
+   height: 200px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   .text-center{
+       font-style: italic;
+       width: 800px;
+   }
+}
+.pure{
+   img{
+       width: 100%;
+       max-width: 33.875rem;
+       height: 26.44rem;
+       margin-top: 5rem;
+    // box-sizing: border-box;
+   }
+}
+@media screen and (min-width: 768px){
+   .wrap-it{
+       grid-template-columns: repeat(2,1fr);
+   }
+} 
+.wrap-it{
+   box-sizing: border-box;
+   display: grid;
+   column-gap: 4rem;
+}
+.btn-outline-dark{
+   border: 3px solid #00923F; 
+   border-radius: 0;
+   color: #00923F;
+   display: flex;
+   font-weight: 300;
+   font-size: 20px;
+  
+
+   }
+   .boto{
+    //    background-color: red;
+    //    height: 80px;
+       display: flex;
+       justify-content: center;
+       margin-top: 100px;
+       margin-bottom: 100px;
+     
+       
+   }
+
+   @media screen and (min-width: 768px){
+    .man-text{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.man-text{
+    display: grid;
+}
+   .parag{
+    //    background-color: red;
+       display: flex;
+       align-items: center;
+    
+    }
+    .our{
+        margin-top: 12rem;
+    }
+    .clients{
+        display: grid;
+        margin-top: 10rem;
+    }
+    @media screen and (min-width: 768px){
+        .clients{
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+ 
+    @media screen and (min-width: 768px){
+        .clients-2{
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+    .clients-2{
+        display: grid;
+        margin-bottom: 20rem;
+        img{
+            margin-top: 10rem;
+            width: 100%;
+        }
+    }
+
+
+    #contact{
+        .line-p{
+            margin-top: 12rem;
+        }
+        .searchbar {
+            // background-color: red;
+            
+            height: 4.7rem;
+            width: 100%;
+            
+
+            &-wrapper {
+                display: flex;
+               
+            }
+
+            &-input {
+                display: block;
+                width: 100%;
+                border-width: 2px;
+                &:focus{
+                    outline-color: $success;
+                }
+
+            }
+            &-icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 1rem;
+                img {
+                    width: 100%;
+                }
+            }
+
+            @media screen and (min-width:768px){
+                max-width: 38.7rem;
+                margin: 0 auto;
+            }
+            .mb-0{
+                margin-top: 10rem;
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+       
+        
+    }
+    .foot{
+        margin-top: 15rem;
+
+        hr{
+            // width: 100%;
+            border: 1px solid ;
+            
+        }
+        .font-weight{
+            font-weight: 700;
+            font-size: 24px; 
+         }
+         .gbk{
+             h2{
+                 font-weight: 700;
+                 font-size: 35px;
+             }
+         }
+         .link{
+            font-weight: 700;
+            font-size: 24px;  
+         }
+         ul{
+             list-style: none;
+         }
+    }
+
