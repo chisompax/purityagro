@@ -67,18 +67,29 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    .container{
+        height: inherit;
+    }
+    &-wrapper{
+        height: 100%;
+  
+        width: 100%;
+        max-width: 36.3125rem;
+        display: flex;
+        align-items: center;
+
+        // margin-right: auto;
+    }
     
     .pop{
         height:80vmin ;
         display: flex;
         justify-content: left;
         align-items: flex-end;
-        .oppo{
-            width: 581px;
-            p{
-                width: 100%;
-            }
-        }
+        // .oppo{
+        //     width: 100%;
+           
+        // }
     }
 
     h1{
