@@ -6,9 +6,7 @@
 body{
     background-color: white ;
     font-family: 'Poppins';
-
 }
-
 
 
 .flex-1{
@@ -16,21 +14,21 @@ body{
 }
 .btn{
     border-radius: 0;
+    border-width: 3px; 
+    padding: 1.025rem 3.6rem;
+    font-size: 1.3rem;
 }
 
 p{
-    
     font-weight: 300;
     font-size: 18px;
  }
 
 
-
-
 header{
     .active{
-        // color: green;
          border-bottom: 4px solid green;
+        
      }
 
     .navbar{ 
@@ -38,11 +36,12 @@ header{
         font-size: 1.125rem;
         position: relative;
         
+        
         @media screen and (max-width:768px) {
             .nav {
-                position: absolute;
-                top: 70%;
-                flex-direction: column;
+            position: absolute;
+            top: 70%;
+            flex-direction: column;
             align-content: flex-end;
             background-color: #fff;
             width: 100vw;
@@ -68,8 +67,8 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
     .pop{
-        
         height:80vmin ;
         display: flex;
         justify-content: left;
@@ -89,7 +88,7 @@ header{
 
 .line-p{
     display: flex;
-    // justify-content: space-between;
+    
     hr{
         height: 3px;
         flex: 1;
@@ -99,12 +98,12 @@ header{
 
 
 .sit{
-//    background-color: red;
    height: 200px;
    width: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
+   
    .text-center{
        font-style: italic;
        width: 800px;
@@ -114,9 +113,8 @@ header{
    img{
        width: 100%;
        max-width: 33.875rem;
-       height: 26.44rem;
        margin-top: 5rem;
-    // box-sizing: border-box;
+    
    }
 }
 @media screen and (min-width: 768px){
@@ -127,39 +125,27 @@ header{
 .wrap-it{
    box-sizing: border-box;
    display: grid;
-   column-gap: 4rem;
+   column-gap: 4rem;       
 }
-.btn-outline-dark{
-   border: 3px solid #00923F; 
-   border-radius: 0;
-   color: #00923F;
-   display: flex;
-   font-weight: 300;
-   font-size: 20px;
-  
 
-   }
-   .boto{
-    //    background-color: red;
-    //    height: 80px;
-       display: flex;
-       justify-content: center;
-       margin-top: 100px;
-       margin-bottom: 100px;
-     
+
+.duration{
+    margin-top: 6.25rem;
+       margin-bottom: 6.25rem;
        
-   }
+}
+.man-text{
+    display: grid;
+}
+  
 
    @media screen and (min-width: 768px){
     .man-text{
         grid-template-columns: repeat(2,1fr);
     }
 }
-.man-text{
-    display: grid;
-}
-   .parag{
-    //    background-color: red;
+ .parag{
+   
        display: flex;
        align-items: center;
     
@@ -197,13 +183,11 @@ header{
             margin-top: 12rem;
         }
         .searchbar {
-            // background-color: red;
             
             height: 4.7rem;
             width: 100%;
             
-
-            &-wrapper {
+                &-wrapper {
                 display: flex;
                
             }
@@ -244,7 +228,7 @@ header{
         margin-top: 15rem;
 
         hr{
-            // width: 100%;
+            
             border: 1px solid ;
             
         }
