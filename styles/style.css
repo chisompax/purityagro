@@ -10974,6 +10974,10 @@ header .bar-middle {
   display: grid;
 }
 
+.man-text .steve img {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .man-text {
     -ms-grid-columns: (1fr)[2];
