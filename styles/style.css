@@ -11004,6 +11004,10 @@ header .bar-middle {
   margin-top: 10rem;
 }
 
+.clients .syn img {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .clients {
     -ms-grid-columns: (1fr)[4];
