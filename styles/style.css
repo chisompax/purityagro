@@ -10903,6 +10903,10 @@ header .bar-middle {
   width: 581px;
 }
 
+.banner .pop .oppo p {
+  width: 100%;
+}
+
 .banner h1 {
   font-size: 72px;
   font-weight: 700;
