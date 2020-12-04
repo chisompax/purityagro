@@ -10819,9 +10819,20 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+html {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
 body {
   background-color: white;
   font-family: 'Poppins';
+  font-size: 1em;
 }
 
 .flex-1 {
@@ -10890,6 +10901,17 @@ header .bar-middle {
   height: inherit;
 }
 
+.banner-heading {
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-heading {
+    font-size: 4.5rem;
+  }
+}
+
 .banner-wrapper {
   height: 100%;
   width: 100%;
@@ -10913,12 +10935,6 @@ header .bar-middle {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
-
-.banner h1 {
-  font-size: 72px;
-  font-weight: 700;
-  margin-bottom: 7px;
 }
 
 .line-p {
